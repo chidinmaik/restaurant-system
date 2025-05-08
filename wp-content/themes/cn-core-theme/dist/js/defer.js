@@ -1,0 +1,1 @@
+!function(t){"use strict";window.cnThirdPartyScripts.triptease.enabled&&t(window).one("scroll",function(){t.getScript("https://static.triptease.io/paperboy/paperboy.js?hotelkey="+window.cnThirdPartyScripts.triptease.hotel_key)})}(jQuery);

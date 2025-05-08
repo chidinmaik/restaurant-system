@@ -1,0 +1,1 @@
+var CN=CN||{};CN.SelectRedirect=function(e){this.elements={base:e},this.init()},CN.SelectRedirect.prototype.init=function(){$(this.elements.base).on("change",function(e){var t=$(this).find(":selected").val();window.location=t})};

@@ -1,0 +1,105 @@
+/*------------------------------------*\
+  #TRANSFER-TOOL
+\*------------------------------------*/
+.c-transfer-tool--position-left {
+  left: 0; }
+
+.c-transfer-tool--position-left .c-transfer-tool__inner {
+  transform: translateX(-100%); }
+
+.c-transfer-tool--position-right {
+  right: 0;
+  flex-direction: row-reverse; }
+
+.c-transfer-tool--position-right .c-transfer-tool__inner {
+  transform: translateX(100%); }
+
+.c-transfer-tool {
+  position: fixed;
+  display: flex;
+  top: var(--tt-offset);
+  color: var(--tt-theme-color);
+  text-align: center;
+  z-index: var(--tt-z-index);
+  transition: box-shadow 300ms; }
+  .c-transfer-tool.is-active {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    transition-delay: 400ms; }
+  .c-transfer-tool__toggle {
+    position: relative;
+    width: 50px;
+    padding: 20px 0;
+    background-color: var(--tt-theme-color);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+    flex-shrink: 0; }
+    .c-transfer-tool__toggle span {
+      transform: rotate(180deg);
+      font-size: 90%;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem; }
+  .c-transfer-tool__heading {
+    display: block;
+    font-size: 125%;
+    color: var(--tt-theme-color);
+    text-align: left; }
+  .c-transfer-tool__content {
+    all: unset;
+    display: block;
+    margin-bottom: 0;
+    font-size: 85%;
+    text-align: left; }
+  .c-transfer-tool__icons {
+    display: grid;
+    padding: 10px 0;
+    grid-auto-flow: column;
+    gap: 15px; }
+  .c-transfer-tool__icon img {
+    display: block;
+    width: 40px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 auto 10px;
+    aspect-ratio: 1 / 1; }
+  .c-transfer-tool__icon-label {
+    display: block;
+    font-size: 85%;
+    line-height: 1.2; }
+  .c-transfer-tool__button {
+    all: unset;
+    display: inline-block;
+    min-width: 100px;
+    padding: 10px 20px;
+    border: solid 1px var(--tt-theme-color);
+    font-size: 85%;
+    color: var(--tt-theme-color);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 300ms, color 300ms; }
+    .c-transfer-tool__button:hover, .c-transfer-tool__button:active, .c-transfer-tool__button:focus {
+      background-color: var(--tt-theme-color);
+      color: white; }
+  .c-transfer-tool__footnote {
+    all: unset;
+    display: block;
+    font-size: 75%;
+    opacity: .6; }
+  .c-transfer-tool__inner {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    padding: 30px;
+    background-color: white;
+    z-index: 1;
+    pointer-events: none;
+    transition: transform 300ms; }
+    .c-transfer-tool__inner > * + * {
+      margin-top: 20px; }
+    .is-active .c-transfer-tool__inner {
+      transform: translateX(0);
+      pointer-events: all; }

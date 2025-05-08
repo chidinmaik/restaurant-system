@@ -1,0 +1,1 @@
+function cn_lazyload_script(e,t){let n=document.querySelector(t),r=document.createElement("script");if(r.setAttribute("src",e),n)if("IntersectionObserver"in window){let t=new IntersectionObserver(function(e){e[0].isIntersecting&&(document.head.appendChild(r),t.unobserve(n))},{threshold:1});t.observe(n)}else document.head.appendChild(r)}
