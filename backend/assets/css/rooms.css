@@ -1,0 +1,262 @@
+/* rooms.css */
+
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for luxury feel */
+    background-color: #f7f7f7; /* Light grey background for clean look */
+    color: #333; /* Dark text for readability */
+}
+
+/* Container and Layout */
+.container {
+    max-width: 1200px; /* Matches typical hotel site width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Room Gallery (Swiper Slider) */
+.room-gallery {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.room-gallery .swiper-slide img {
+    width: 100%;
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure images fit nicely */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; /* White arrows for contrast */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-pagination-bullet-active {
+    background: #8b6f47; /* Gold accent for pagination */
+}
+
+/* Room Details Card */
+.card {
+    border: none; /* Remove default Bootstrap border */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for elegance */
+    background-color: #fff;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 2.5rem; /* Large, elegant title */
+    color: #1a2526; /* Dark teal for sophistication */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    font-size: 1.1rem;
+    color: #6c757d; /* Bootstrap muted color */
+}
+
+/* Badges for Room Specs */
+.badge.bg-secondary {
+    background-color: #e8e3d8 !important; /* Light beige for subtle luxury */
+    color: #1a2526; /* Dark text for contrast */
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Description and Amenities */
+h5 {
+    font-size: 1.25rem;
+    color: #1a2526;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '\f00c'; /* FontAwesome check icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #8b6f47; /* Gold accent */
+    position: absolute;
+    left: 0;
+}
+
+/* Booking Card */
+.card.sticky-top {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-header.bg-dark {
+    background-color: #1a2526 !important; /* Dark teal for header */
+    padding: 15px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-header h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.text-primary {
+    color: #8b6f47 !important; /* Gold for price highlight */
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.text-muted small {
+    font-size: 0.85rem;
+}
+
+/* Form Styling */
+.form-label {
+    font-size: 0.9rem;
+    color: #1a2526;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #e8e3d8; /* Light beige border */
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.95rem;
+    background-color: #f9f9f9; /* Light background for inputs */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #8b6f47; /* Gold border on focus */
+    box-shadow: 0 0 5px rgba(139, 111, 71, 0.3); /* Subtle glow */
+    background-color: #fff;
+}
+
+/* Alert (Price Breakdown) */
+.alert-info {
+    background-color: #f5f3ef; /* Light beige for price summary */
+    border-color: #e8e3d8;
+    color: #4a4a4a;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.alert-info hr {
+    border-color: #e8e3d8;
+}
+
+.alert-info .fw-bold {
+    color: #1a2526;
+    font-size: 1.1rem;
+}
+
+/* Book Now Button */
+.btn-primary {
+    background-color: #8b6f47; /* Gold for button */
+    border-color: #8b6f47;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #725a3a; /* Darker gold on hover */
+    border-color: #725a3a;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.btn-primary:disabled {
+    background-color: #b0b0b0;
+    border-color: #b0b0b0;
+    opacity: 0.7;
+}
+
+/* Alert for Unavailable Room */
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .room-gallery .swiper-slide img {
+        height: 300px; /* Smaller height on mobile */
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card.sticky-top {
+        position: static; /* Disable sticky on mobile for better UX */
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        padding: 10px;
+    }
+}
+
+/* Typography Consistency */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p, span, div, label, input, select, button {
+    font-family: 'Roboto', sans-serif; /* Clean sans-serif for body text */
+}

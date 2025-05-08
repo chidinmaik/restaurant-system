@@ -1,0 +1,187 @@
+/* booking.css */
+
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Container and Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.card.sticky-top {
+    top: 20px;
+}
+
+/* Card Header */
+.card-header.bg-dark {
+    background-color: #1a2526 !important;
+    padding: 15px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-header h3,
+.card-header h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Form Styling */
+.form-label {
+    font-size: 0.9rem;
+    color: #1a2526;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border: 1px solid #e8e3d8;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.95rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #8b6f47;
+    box-shadow: 0 0 5px rgba(139, 111, 71, 0.3);
+    background-color: #fff;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #8b6f47;
+    border-color: #8b6f47;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #725a3a;
+    border-color: #725a3a;
+    transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+    border-color: #e8e3d8;
+    color: #1a2526;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e8e3d8;
+    color: #1a2526;
+}
+
+/* Alerts */
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+.alert-danger ul {
+    list-style: none;
+    padding: 0;
+}
+
+.alert-danger li {
+    margin-bottom: 5px;
+}
+
+/* Room Details Sidebar */
+.card-body h5 {
+    font-size: 1.25rem;
+    color: #1a2526;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-body img {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.fw-bold {
+    color: #1a2526;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .card.sticky-top {
+        position: static;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .btn-primary,
+    .btn-outline-secondary {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .card-body img {
+        max-height: 120px;
+    }
+}
+
+/* Typography Consistency */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p, span, div, label, input, button {
+    font-family: 'Roboto', sans-serif;
+}

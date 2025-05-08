@@ -1,0 +1,293 @@
+ /* Guardsman UI Elements - Modern Version */
+ :root {
+  --primary: #d4af37;
+  --primary-hover: #c09c30;
+  --dark-bg: #121212;
+  --dark-card: #1e1e1e;
+  --text-light: #f8f9fa;
+  --text-muted: #adb5bd;
+}
+
+.bg-orange {
+  background-color: var(--primary) !important;
+}
+
+.text-orange {
+  color: var(--primary) !important;
+}
+
+.btn-orange {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #212529;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline-light {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--text-light);
+  color: var(--dark-bg);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.border-gray {
+  border-color: #343a40 !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-gray {
+  color: var(--text-muted);
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  z-index: 2;
+}
+
+/* Modern Card Design */
+.custom-card {
+  background-color: var(--dark-card);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+}
+
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.card-img-container img {
+  transition: transform 0.5s ease;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.custom-card:hover .card-img-container img {
+  transform: scale(1.05);
+}
+
+.card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--primary);
+  color: var(--dark-bg);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-price {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Modern Search Bar */
+.search-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  background-color: var(--dark-card);
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding: 12px 20px 12px 50px;
+  width: 100%;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.25);
+  border-color: var(--primary);
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary);
+}
+
+/* Category Pills */
+.category-pill {
+  background-color: var(--dark-card);
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding: 8px 16px;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.category-pill:hover, .category-pill.active {
+  background-color: var(--primary);
+  color: var(--dark-bg);
+  border-color: var(--primary);
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+  margin-top: 8px;
+}
+
+.see-all-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.see-all-link:hover {
+  color: var(--primary-hover);
+  transform: translateX(3px);
+}
+
+/* Modern Modal */
+.modal-modern {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.modal-modern .modal-header {
+  border-bottom: none;
+  padding: 20px;
+}
+
+.modal-modern .modal-body {
+  padding: 0 20px 20px;
+}
+
+.modal-modern .modal-footer {
+  border-top: none;
+  padding: 0 20px 20px;
+}
+
+.modal-product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: var(--dark-card);
+  width: fit-content;
+}
+
+.quantity-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--text-light);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quantity-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quantity-input {
+  background-color: transparent;
+  border: none;
+  color: var(--text-light);
+  width: 50px;
+  text-align: center;
+}
+
+/* Modern Toast */
+.toast-modern {
+  background-color: var(--dark-card);
+  color: var(--text-light);
+  border-radius: 10px;
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

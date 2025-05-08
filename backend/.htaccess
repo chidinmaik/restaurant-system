@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Allow direct access to uploads directory
+    RewriteRule ^uploads/ - [L]
+    
+    # Other rewrite rules...
+</IfModule>

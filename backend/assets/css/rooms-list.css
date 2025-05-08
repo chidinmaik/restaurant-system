@@ -1,0 +1,216 @@
+/* rooms-list.css */
+
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Container and Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+h2 {
+    font-size: 2.5rem;
+    color: #1a2526;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Filter Sidebar */
+.card.sticky-top {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    top: 20px;
+}
+
+.card-header.bg-dark {
+    background-color: #1a2526 !important;
+    padding: 15px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-header h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Form Styling */
+.form-label {
+    font-size: 0.9rem;
+    color: #1a2526;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #e8e3d8;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.95rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #8b6f47;
+    box-shadow: 0 0 5px rgba(139, 111, 71, 0.3);
+    background-color: #fff;
+}
+
+/* Search Button */
+.btn-primary {
+    background-color: #8b6f47;
+    border-color: #8b6f47;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #725a3a;
+    border-color: #725a3a;
+    transform: translateY(-2px);
+}
+
+/* Room Cards */
+.room-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.room-image {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #1a2526;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Badges */
+.badge.bg-secondary {
+    background-color: #e8e3d8 !important;
+    color: #1a2526;
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Price and Buttons */
+.text-primary {
+    color: #8b6f47 !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn-outline-primary {
+    border-color: #8b6f47;
+    color: #8b6f47;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8b6f47;
+    color: #fff;
+}
+
+/* Alert */
+.alert-info {
+    background-color: #f5f3ef;
+    border-color: #e8e3d8;
+    color: #4a4a4a;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .card.sticky-top {
+        position: static;
+    }
+
+    .room-image {
+        height: 150px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .room-card .row {
+        flex-direction: column;
+    }
+
+    .room-image {
+        height: 200px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .btn-primary,
+    .btn-outline-primary {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Typography Consistency */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p, span, div, label, input, select, button {
+    font-family: 'Roboto', sans-serif;
+}

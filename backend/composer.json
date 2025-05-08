@@ -1,0 +1,6 @@
+{
+    "require": {
+        "stripe/stripe-php": "^17.2",
+        "flutterwavedev/flutterwave-v3": "^1.1"
+    }
+}

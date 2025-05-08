@@ -1,0 +1,165 @@
+/* In assets/css/rooms-list.css or assets/css/footer-1.css */
+footer.bg-dark {
+    background-color: #212121;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h3, footer h5 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+}
+
+footer .text-muted {
+    color: #b0b0b0 !important;
+}
+
+footer a.text-light:hover {
+    color: #ff9800 !important; /* Orange hover effect */
+}
+
+footer .bg-gray {
+    background-color: #444444;
+    height: 1px;
+}
+
+footer .form-control.bg-dark {
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: #ffffff;
+}
+
+footer .form-control.bg-dark::placeholder {
+    color: #b0b0b0;
+}
+
+footer .btn-orange {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #ffffff;
+}
+
+footer .btn-orange:hover {
+    background-color: #e68900;
+    border-color: #e68900;
+}
+
+@media (max-width: 768px) {
+    footer .form-control.bg-dark {
+        max-width: 100%;
+    }
+    footer .d-flex.gap-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .btn-orange {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+/* In assets/css/rooms-list.css or assets/css/footer-1.css */
+
+/* General UI Styles for index.php */
+body {
+    background-color: #212121;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+}
+
+.text-primary {
+    color: #ff9800 !important; /* Adjust to match rooms.php (was blue, changed to orange) */
+}
+
+.btn-primary {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: #e68900;
+    border-color: #e68900;
+}
+
+.btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #212121;
+}
+
+.card.bg-dark {
+    background-color: #2a2a2a !important;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.text-muted {
+    color: #b0b0b0 !important;
+}
+
+/* Footer Styles */
+footer.bg-dark {
+    background-color: #212121;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h3, footer h5 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+}
+
+footer .text-muted {
+    color: #b0b0b0 !important;
+}
+
+footer a.text-light:hover {
+    color: #ff9800 !important;
+}
+
+footer .bg-gray {
+    background-color: #444444;
+    height: 1px;
+}
+
+footer .form-control.bg-dark {
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: #ffffff;
+}
+
+footer .form-control.bg-dark::placeholder {
+    color: #b0b0b0;
+}
+
+@media (max-width: 768px) {
+    footer .form-control.bg-dark {
+        max-width: 100%;
+    }
+    footer .d-flex.gap-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .btn-primary {
+        width: 100%;
+        max-width: 300px;
+    }
+}
